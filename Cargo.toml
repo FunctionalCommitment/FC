@@ -1,0 +1,34 @@
+[package]
+name = "vector_element_range_proof"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+num-bigint = { version = "0.3", package = "num-bigint-dig", features = ["rand", "i128", "u64_digit", "serde", "prime"] }
+num-traits = "^0.2.6"
+num-integer = "0.1.39"
+num-iter = "0.1.37"
+polynomial = "0.2.4"
+rand = "0.8"
+failure = "0.1"
+failure_derive = "0.1"
+blake2 = "0.8.0"
+generic-array = "0.12.0"
+rand_chacha = "0.1"
+sapling-crypto = { package = "sapling-crypto_ce", git = "https://github.com/alex-ozdemir/sapling-crypto", branch = "bls12-poseidon" }
+time="0.1"
+pairing-plus = { git = "https://github.com/algorand/pairing-plus"}
+ff-zeroize = { version = "0.6.3", features = ["derive"]}
+sha2 = "0.8"
+bigint = { version = "4", default-features = false }
+byteorder="1.4.3"
+serde = { version = "1", default-features = false, features = ["alloc"] }
+serde_derive = { version = "1", default-features = false }
+clear_on_drop = { version = "0.2", default-features = false }
+sha3 = { version = "0.10", default-features = false }
+digest = { version = "0.10", default-features = false }
+merlin = { version = "3", default-features = false }
+rand_core = { version = "0.6", default-features = false, features = ["alloc"] }
+subtle = { version = "2.5", default-features = false }
